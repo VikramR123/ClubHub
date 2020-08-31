@@ -1,11 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import TabScreen from './screens/TabScreen'
 
-export default function App() {
+export default function Tab3() {
   return (
-    <TabScreen />
+    <View style={styles.container}>
+      <Text>This is the third tab !</Text>
+      <StatusBar style="auto" />
+    </View>
   );
 }
 
