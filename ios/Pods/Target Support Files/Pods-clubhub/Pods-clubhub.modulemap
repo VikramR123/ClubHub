@@ -1,0 +1,6 @@
+module Pods_clubhub {
+  umbrella header "Pods-clubhub-umbrella.h"
+
+  export *
+  module * { export * }
+}
