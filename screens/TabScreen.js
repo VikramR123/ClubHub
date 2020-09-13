@@ -3,7 +3,6 @@ import { Container, Header, Content, Footer, FooterTab, Button, Icon, Text, Badg
 import Tab1 from './tabs/tab1'
 import Tab2 from './tabs/tab2'
 import Tab3 from './tabs/tab3'
-import Tab4 from './Login'
 
 
 
@@ -34,7 +33,7 @@ export default function TabScreen() {
             <Icon active name="navigate" />
             <Text>Navigate</Text>
             </Button>
-            <Button active={activeIcon === 4} onPress={() => {setActiveIcon(4); setActiveTab(<Tab4 />)}} vertical>
+            <Button active={activeIcon === 4} onPress={() => {setActiveIcon(4); setActiveTab(<Tab1 />)}} vertical>
             <Icon name="person" />
             <Text>Contact</Text>
             </Button>

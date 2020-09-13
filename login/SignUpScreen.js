@@ -3,12 +3,11 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 
-export default function Tab4() {
+
+export default function SplashScreen() {
   return (
-    <View style={styles.container}>
-      <Text>Work on Log in and sign up UI</Text>
-      <StatusBar style="auto" />
-    </View>
+    <Text> Signup Screen </Text>
+    // <TabScreen />
   );
 }
 

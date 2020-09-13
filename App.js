@@ -1,13 +1,48 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import TabScreen from './screens/TabScreen'
+import { NavigationContainer, StackActions } from '@react-navigation/native'
+import { createStackNavigator } from '@react-navigation/stack'
 
-export default function App() {
+import TabScreen from './screens/TabScreen'
+import Login from './login/Login'
+import SplashScreen from './login/SplashScreen'
+
+
+const LoginScreen = () => {
   return (
-    <TabScreen />
-  );
+    //<Login />
+    <View>
+      <Text> Testing out </Text>
+    </View>
+  )
 }
+
+
+const Stack = createStackNavigator();
+
+
+const App = () => {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Login" component={LoginScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  )
+}
+
+
+
+export default App;
+// export default function App() {
+//   return (
+//     <Login/>
+//     //<SplashScreen/>
+    
+//     //<TabScreen />
+//   );
+// }
 
 const styles = StyleSheet.create({
   container: {

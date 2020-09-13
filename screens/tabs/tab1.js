@@ -5,7 +5,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function Tab1() {
   return (
     <View style={styles.container}>
-      <Text>This is the first tab!</Text>
+      <Text>This is the first tab !</Text>
       <StatusBar style="auto" />
     </View>
   );
